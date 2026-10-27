@@ -11,7 +11,7 @@ conda env create -f environment.yml
 conda activate mod10
 ```
 
-Then add the dataset as described in [data/README.md](data/README.md).
+The notebooks download the dataset from Zenodo on the first run. See [data/README.md](data/README.md).
 
 If conda raises `CondaToSNonInteractiveError`, accept the channel terms with the `conda tos accept` commands it prints. On the lab computers, first run `conda config --add envs_dirs "%USERPROFILE%\conda-envs"`.
 
@@ -31,3 +31,7 @@ ruff check . && ruff format .
 ```
 
 Run notebooks top to bottom (Restart & Run All) before committing. Never commit data files and never edit `data/raw/`.
+
+## Data
+
+City of Montreal public trees inventory, snapshot of 2026-10-07, licence CC BY 4.0. Copy: https://doi.org/10.5281/zenodo.23540888
