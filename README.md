@@ -17,20 +17,13 @@ If conda raises `CondaToSNonInteractiveError`, accept the channel terms with the
 
 ## Layout
 
-- `data/`: dataset snapshot (not versioned) and its documentation
+- `data/`: raw dataset (not versioned), processed file of Deliverable 2, and documentation
 - `notebooks/`: one notebook per deliverable, named `dNN_<topic>.ipynb`
-- `src/mtl_trees/`: reusable code imported by the notebooks
-- `tests/`: unit tests
 - `reports/`: written deliverables and figures
 
 ## Development
 
-```bash
-pytest
-ruff check . && ruff format .
-```
-
-Run notebooks top to bottom (Restart & Run All) before committing. Never commit data files and never edit `data/raw/`.
+Run notebooks top to bottom (Restart & Run All) before committing. Never commit the raw data file and never edit `data/raw/`.
 
 ## Data
 

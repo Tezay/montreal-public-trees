@@ -1,6 +1,6 @@
 # Data
 
-Data files are not stored in Git.
+The raw file is not stored in Git. The processed file of Deliverable 2 is (see [Processed file](#processed-file)).
 
 | | |
 |---|---|
@@ -28,6 +28,18 @@ shasum -a 256 data/raw/montreal_public_trees_2026-10-07.csv
 ```
 
 On Windows, use `Get-FileHash <file>` in PowerShell.
+
+## Processed file
+
+`data/processed/trees_encoded.csv` is the output of the Deliverable 2 notebook (the `to_csv` line of section 3): cleaned and encoded, not scaled. Later deliverables read it instead of cleaning the raw file again.
+
+| | |
+|---|---|
+| Content | 334,950 rows, 62 columns (61 features and `DHP`), the first column `raw_row` is the row number in the raw file |
+| Size | 51,012,408 bytes |
+| SHA-256 | `a07265322bbe351c7abf45a8c404188bd015d481cb20412580eca3713bc3b477` |
+
+If the cleaning of Deliverable 2 changes, create the file again and commit it.
 
 ## Citation
 

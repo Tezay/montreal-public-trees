@@ -19,8 +19,8 @@ dist/
 .vscode/
 .idea/
 
-# Data: never commit (see data/README.md)
+# Data: only the processed file of Deliverable 2 is committed (see data/README.md)
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
-!data/processed/.gitkeep
+!data/processed/trees_encoded.csv
